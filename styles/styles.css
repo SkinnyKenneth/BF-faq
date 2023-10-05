@@ -95,7 +95,7 @@ h3 {
     font-size: 1rem;
     font-family: inherit;
     &:hover {
-        border-color: var(--bf-black);
+        border-color: var(--bf-grey);
     }
 }
 
@@ -106,6 +106,9 @@ h3 {
     border: 2px solid var(--bf-light-grey);
     padding: .125rem;
     border-radius: 0 100vw 100vw 0;
+    &:hover, :focus-visible {
+        border-color: var(--bf-grey)
+    }
 }
 
 .search-glass > svg {
@@ -133,6 +136,6 @@ h3 {
     border-radius: 3px;
     transition: border 200ms ease-out;
     &:hover {
-        border-color: var(--black);
+        border-color: var(--bf-grey);
     }
 }
