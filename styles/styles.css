@@ -1,0 +1,138 @@
+@import "./reset.css";
+@import "./variables.css";
+
+/* global styles */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    height: 6rem;
+    border-block-end: 2px solid var(--bf-grey);
+    padding-block: 1rem;
+}
+
+main {
+    padding-block: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+/* utility classes */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.content-wrapper {
+    max-width: 70rem;
+    margin-inline: auto;
+}
+
+/* layout */
+.header-wrapper {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo h2 {
+    font-weight: 500;
+    color: var(--bf-grey);
+    & > span {
+        color: var(--bf-blue);
+        font-weight: 800;
+    }
+}
+
+.login > button {
+    border: 2px solid var(--bf-blue);
+    color: var(--bf-blue);
+    padding: .5rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    background-color: #FFF;
+    transition: background 180ms ease-in, color 100ms ease-out 140ms;
+    &:hover, &:focus:focus-visible {
+        background-color: var(--bf-blue);
+        color: #FFF;
+        transition: background 380ms ease-in, color 100ms ease-out 140ms;
+    }
+    &:active {
+        border-color: var(--bf-black);
+        color: var(--bf-light-grey);
+    }
+}
+
+.input-wrapper {
+    position: relative;
+    align-items: center;
+    width: max-content;
+}
+
+.search input {
+    line-height: 1.75;
+    width: var(--input-width);
+    padding: 0 .5rem;
+    border-radius: 3px;
+    border: 2px solid var(--bf-light-grey);
+    outline: transparent;
+    transition: border 200ms ease-out;
+    font-size: 1rem;
+    font-family: inherit;
+    &:hover {
+        border-color: var(--bf-black);
+    }
+}
+
+.search-glass {
+    position: absolute;
+    inset: auto -2rem auto auto;
+    cursor: pointer;
+    border: 2px solid var(--bf-light-grey);
+    padding: .125rem;
+    border-radius: 0 100vw 100vw 0;
+}
+
+.search-glass > svg {
+    width: 1.5rem;
+}
+
+.options {
+    grid-template-rows: repeat(5, 0fr);
+    gap: .25rem;
+    opacity: 0;
+    transition: none;
+    width: var(--input-width);
+    margin-block-start: .25rem;
+    &.open {
+        grid-template-rows: repeat(5, 1fr);
+        opacity: 1;
+        transition: grid-template-rows 500ms ease-out, opacity 220ms ease-in 300ms;
+    }
+}
+
+.search .options > li {
+    overflow-y: hidden;
+    border: 2px solid var(--bf-light-grey);
+    padding: .25rem .5rem;
+    border-radius: 3px;
+    transition: border 200ms ease-out;
+    &:hover {
+        border-color: var(--black);
+    }
+}
