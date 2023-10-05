@@ -78,10 +78,18 @@ h3 {
     }
 }
 
+form.search-form {
+    position: relative;
+}
+
 .input-wrapper {
     position: relative;
     align-items: center;
     width: max-content;
+}
+
+.search {
+    margin-block-end: 3rem;
 }
 
 .search input {
@@ -116,6 +124,9 @@ h3 {
 }
 
 .options {
+    position: absolute;
+    inset: 2rem auto auto auto;
+    background-color: #FFF;
     grid-template-rows: repeat(5, 0fr);
     gap: .25rem;
     opacity: 0;
