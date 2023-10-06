@@ -1,3 +1,10 @@
+// link to home page on logo click
+const logoLink = document.querySelector(".logo");
+
+logoLink.addEventListener("click", () => {
+    window.location.href = "./index.html";
+})
+
 // show dropdown suggestions for input
 const optionsList = document.querySelector(".options");
 const searchBar = document.querySelectorAll(".input-wrapper > *")
