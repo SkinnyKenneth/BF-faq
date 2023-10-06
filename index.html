@@ -10,8 +10,8 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap"
 			rel="stylesheet"
 		/>
-        <script src="./js/main.js" defer></script>
-		<title>Document</title>
+		<script src="./js/main.js" defer></script>
+		<title>Bikefinder | FAQ</title>
 	</head>
 	<body>
 		<header>
@@ -28,9 +28,10 @@
 				</div>
 			</div>
 		</header>
+		<h1 hidden>Bikefinder FAQ page</h1>
 		<main class="content-wrapper">
 			<div class="search">
-				<h3>How can we help you today?</h3>
+				<h2>How can we help you today?</h2>
 				<form action="" class="search-form flex column">
 					<div class="input-wrapper flex">
 						<label for="searchQuery" class="search-glass">
@@ -53,32 +54,46 @@
 									fill="currentColor"
 								/>
 							</svg>
+							<span hidden aria-label="search"> search </span>
 						</label>
 						<input
-                            type="text"
+							type="text"
 							list="searchList"
 							name="searchQuery"
 							id="searchQuery"
 							placeholder="Enter your search term here..."
-                            autocomplete="off"
+							autocomplete="off"
 						/>
 					</div>
-                    <ul class="options grid">
-                        <li>one</li>
-                        <li>two</li>
-                        <li>three</li>
-                        <li>four</li>
-                        <li>five</li>
-                    </ul>
+					<ul class="options grid">
+						<li>one</li>
+						<li>two</li>
+						<li>three</li>
+						<li>four</li>
+						<li>five</li>
+					</ul>
 				</form>
 			</div>
-            <div class="main-content">
-                <div class="knowledge-base">
-                    <h2>Knowledge base</h2>
-                    <h3>How to get started?</h3>
-
-                </div>
-            </div>
+			<div class="main-content">
+				<div class="knowledge-base">
+					<h2>Knowledge base</h2>
+					<h3>How to get started?</h3>
+				</div>
+				<div class="flex">
+					<ol>
+						<h4>Step-by-step guide (5)</h4>
+						<li><a href="#">Set up your Bikefinder</a></li>
+						<li><a href="#">Subscription & activation</a></li>
+						<li><a href="#">Mount tracker & verify signals</a></li>
+						<li><a href="#">Understand how your tracker works</a></li>
+						<li><a href="#">Insurance terms & conditions (if appli...</a></li>
+					</ol>
+					<ul>
+						<h4>Getting started video (1)</h4>
+						<li><a href="#">Watch it here</a></li>
+					</ul>
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
