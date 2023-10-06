@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    height: 6rem;
+    height: 8rem;
     border-block-end: 2px solid var(--bf-grey);
     padding-block: 1rem;
 }
@@ -42,6 +42,7 @@ h2 {
 
 /* layout */
 .header-wrapper {
+    height: 100%;
     align-items: center;
     justify-content: space-between;
 }
@@ -151,6 +152,15 @@ form.search-form {
     &:hover {
         border-color: var(--bf-grey);
     }
+}
+
+.main-content .flex {
+    gap: 14cqi;
+    flex-wrap: wrap;
+}
+
+.main-content .flex > * {
+    flex-shrink: 0;
 }
 
 .main-content li {
